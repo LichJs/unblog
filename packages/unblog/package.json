@@ -1,0 +1,45 @@
+{
+  "name": "@lichjs/unblog",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "test": "vitest run",
+    "lint": "eslint ./src/** --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint ./src/** --ext .js,.jsx,.ts,.tsx --fix",
+    "test:ui": "vitest --ui",
+    "release": "standard-version -a"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@mdx-js/rollup": "^2.0.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@types/mdx": "^2.0.1",
+    "@vitejs/plugin-legacy": "^1.7.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.4",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "rollup": "^2.67.2",
+    "vite": "^2.8.0",
+    "vite-plugin-mdx": "^3.5.10",
+    "vitest": "^0.3.2"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.0.0",
+    "@mdx-js/vue": "^2.0.0",
+    "remark-autolink-headings": "^7.0.1",
+    "remark-frontmatter": "^4.0.1",
+    "remark-gfm": "^3.0.1",
+    "remark-slug": "^7.0.1",
+    "vue": "^3.2.30",
+    "vue-router": "^4.0.12"
+  }
+}
