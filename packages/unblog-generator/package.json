@@ -7,8 +7,8 @@
   "browser": "dist/unblog-generator.umd.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
-    "build:dev": "rollup -c",
-    "start": "npm run build && node dist/unblog-generator.cjs.js"
+    "start:dev": "rollup -c && node dist/unblog-generator.cjs.js",
+    "start": "node dist/unblog-generator.cjs.js"
   },
   "keywords": [],
   "author": "",
@@ -21,10 +21,12 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.3",
+    "axios": "^0.25.0",
     "cosmiconfig": "^7.0.1",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.21",
     "rollup": "^2.67.2",
-    "rollup-plugin-esbuild": "^4.8.2"
+    "rollup-plugin-esbuild": "^4.8.2",
+    "rollup-plugin-polyfill-node": "^0.8.0"
   }
 }

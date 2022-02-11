@@ -1,3 +1,8 @@
-import { config } from './utils/config';
+import { getLabels } from './api/getlabels';
 
-console.log(config);
+async function bootstrap() {
+  const labels = await getLabels();
+  console.log(labels);
+}
+
+bootstrap();

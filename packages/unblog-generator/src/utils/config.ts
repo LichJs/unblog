@@ -1,6 +1,12 @@
 import { cosmiconfigSync } from 'cosmiconfig';
 
+interface UnblogConfig {
+  /** github repository link */
+  repo: string;
+}
+
 const explorerSync = cosmiconfigSync('unblog');
-const config = explorerSync.search();
+const search = explorerSync.search();
+const config: UnblogConfig = search ? search.config : null;
 
 export { config };
