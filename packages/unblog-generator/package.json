@@ -2,15 +2,29 @@
   "name": "@lichjs/unblog-generator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/unblog-generator.cjs.js",
+  "module": "dist/unblog-generator.esm.js",
+  "browser": "dist/unblog-generator.umd.js",
   "scripts": {
-    "test": "ts-node ./src/main.ts"
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "build:dev": "rollup -c",
+    "start": "npm run build && node dist/unblog-generator.cjs.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "cosmiconfig": "^7.0.1",
-    "ts-node": "^10.5.0"
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.14.21",
+    "rollup": "^2.67.2",
+    "rollup-plugin-esbuild": "^4.8.2"
   }
 }

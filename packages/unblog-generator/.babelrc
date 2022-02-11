@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env", 
+      { 
+        "modules": false, 
+        "useBuiltIns": "usage" 
+      }
+    ]
+  ],
+  "plugins": [
+    ["@bable/plugin-transform-runtime"]
+  ],
+  "ignore": [
+    "node_modules/**"
+  ],
+}

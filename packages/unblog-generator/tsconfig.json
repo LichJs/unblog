@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "dest",
+    "outDir": "dist",
     "isolatedModules": true,
     "sourceMap": false,
     "target": "esnext",
