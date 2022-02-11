@@ -1,0 +1,16 @@
+{
+  "name": "@lichjs/unblog-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cosmiconfig": "^7.0.1",
+    "ts-node": "^10.5.0"
+  }
+}
