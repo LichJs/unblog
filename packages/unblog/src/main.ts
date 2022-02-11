@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import 'heti/umd/heti.min.css';
+
 import App from './App';
 import router, { setupRouter } from './router';
 

@@ -19,6 +19,9 @@
     "lib": ["esnext", "dom"],
     "types": ["node","vite/client","vitest/globals"],
     "rootDir": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
 
   "include": [
