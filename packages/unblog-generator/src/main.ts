@@ -1,4 +1,4 @@
-import { getLabels } from './api/getlabels';
+import { getLabels } from './api/labels';
 
 async function bootstrap() {
   const labels = await getLabels();
