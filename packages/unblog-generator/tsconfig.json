@@ -17,7 +17,7 @@
     "removeComments": true,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
-    "types": ["node"],
+    "types": ["node", "element-plus/global"],
     "rootDir": ".",
     "paths": {
       "@/*": ["./src/*"]

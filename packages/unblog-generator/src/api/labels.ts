@@ -3,8 +3,6 @@ import { request } from '../utils/request';
 // import from .env file
 const repo = import.meta.env.VITE_GITHUB_REPO;
 
-console.log(import.meta.env);
-
 export interface BlogLabelForm {
   description: string;
   color: string;
@@ -25,10 +23,6 @@ export async function getLabels() {
 }
 
 export async function createLabel(params: BlogLabelForm) {
-  console.log('create label.....');
-  console.log(params);
   const result = await request.post(`/repos/${repo}/labels`, params);
-  console.log('create label result: ');
-  console.log(result);
   return result;
 }

@@ -1,9 +1,15 @@
 {
   "cSpell.words": [
     "commitlint",
+    "esbuild",
     "heti",
+    "lichjs",
+    "pinia",
+    "unblog",
+    "unplugin",
     "vite",
     "vitejs",
-    "vitest"
+    "vitest",
+    "windicss"
   ]
 }

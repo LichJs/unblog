@@ -5,6 +5,10 @@ import path from 'path';
 import vue from '@vitejs/plugin-vue';
 import jsx from '@vitejs/plugin-vue-jsx';
 
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+
 export default defineConfig({
   test: {
     global: true,
@@ -24,7 +28,12 @@ export default defineConfig({
       },
     },
   },
-  plugins: [vue(), jsx()],
+  plugins: [
+    vue(),
+    jsx(),
+    AutoImport({ resolvers: [ElementPlusResolver()] }),
+    Components({ resolvers: [ElementPlusResolver()] }),
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, '/src'),
