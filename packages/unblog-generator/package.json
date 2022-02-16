@@ -6,9 +6,12 @@
   "module": "dist/unblog-generator.esm.js",
   "browser": "dist/unblog-generator.umd.js",
   "scripts": {
+    "dev": "vite",
     "build": "cross-env NODE_ENV=production rollup -c",
     "start:dev": "rollup -c && node dist/unblog-generator.cjs.js",
-    "start": "node dist/unblog-generator.cjs.js"
+    "start": "node dist/unblog-generator.cjs.js",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,12 +24,20 @@
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.3",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "@vitejs/plugin-vue-jsx": "^1.3.4",
+    "@vue/test-utils": "^2.0.0-rc.17",
     "axios": "^0.25.0",
     "cosmiconfig": "^7.0.1",
     "cross-env": "^7.0.3",
     "esbuild": "^0.14.21",
     "rollup": "^2.67.2",
     "rollup-plugin-esbuild": "^4.8.2",
-    "rollup-plugin-polyfill-node": "^0.8.0"
+    "rollup-plugin-polyfill-node": "^0.8.0",
+    "vite": "^2.8.0",
+    "vitest": "^0.3.2"
+  },
+  "dependencies": {
+    "vue": "^3.2.30"
   }
 }

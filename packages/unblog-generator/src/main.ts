@@ -1,8 +1,5 @@
-import { getLabels } from './api/labels';
+import { createApp } from 'vue';
+import App from '@/App';
 
-async function bootstrap() {
-  const labels = await getLabels();
-  console.log(labels);
-}
-
-bootstrap();
+const app = createApp(App);
+app.mount('#app', true);
