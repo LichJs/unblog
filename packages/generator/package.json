@@ -1,15 +1,15 @@
 {
-  "name": "@lichjs/unblog-generator",
+  "name": "@gitblog/generator",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/unblog-generator.cjs.js",
-  "module": "dist/unblog-generator.esm.js",
-  "browser": "dist/unblog-generator.umd.js",
+  "main": "dist/generator.cjs.js",
+  "module": "dist/generator.esm.js",
+  "browser": "dist/generator.umd.js",
   "scripts": {
     "dev": "vite",
     "build": "cross-env NODE_ENV=production rollup -c",
-    "start:dev": "rollup -c && node dist/unblog-generator.cjs.js",
-    "start": "node dist/unblog-generator.cjs.js",
+    "start:dev": "rollup -c && node dist/generator.cjs.js",
+    "start": "node dist/generator.cjs.js",
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },

@@ -13,7 +13,7 @@ export function useQuery() {
     dom: () => (
       <>
         <el-alert
-          unblog:m="y-2"
+          gitblog:m="y-2"
           title="温馨提示"
           description="以下数据将存储在您的本地localStorage中"
           type="success"

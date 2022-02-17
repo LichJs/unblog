@@ -1,6 +1,6 @@
 import { cosmiconfigSync } from 'cosmiconfig';
 
-const explorerSync = cosmiconfigSync('unblog');
+const explorerSync = cosmiconfigSync('gitblog');
 const config = explorerSync.search();
 console.log(config);
 
