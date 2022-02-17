@@ -19,7 +19,7 @@ export type BlogLabels = Array<BlogLabel>;
 
 export async function getLabels() {
   const { data } = await request.get<BlogLabels>(`/repos/${repo}/labels`);
-  return data.map(label => label.name);
+  return data;
 }
 
 export async function createLabel(params: BlogLabelForm) {

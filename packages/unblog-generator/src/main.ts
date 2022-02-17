@@ -2,6 +2,9 @@ import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
+import 'heti/umd/heti.min.css';
+import '@/utils/customized.css';
+import 'virtual:windi.css';
 
 import App from './App';
 import router, { useRouter } from './router';

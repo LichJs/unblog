@@ -7,4 +7,13 @@ export const useStore = defineStore('counter', {
       name: 'dmoosocool',
     };
   },
+
+  actions: {
+    increment() {
+      this.counter++;
+    },
+    decrement() {
+      this.counter--;
+    },
+  },
 });

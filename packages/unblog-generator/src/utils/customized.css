@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+:root {
+  --bg-color: var(--el-color-white);
+}
+
+/* .container {
+  background-color: var(--el-bg-color);
+}
+
+.content {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  padding: 15px 30px;
+} */

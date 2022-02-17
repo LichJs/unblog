@@ -9,6 +9,8 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 
+import WindiCSS from 'vite-plugin-windicss';
+
 export default defineConfig({
   test: {
     global: true,
@@ -18,7 +20,6 @@ export default defineConfig({
     },
   },
   server: {
-    https: true,
     proxy: {
       '/api': {
         target: 'https://api.github.com',
@@ -33,6 +34,12 @@ export default defineConfig({
     jsx(),
     AutoImport({ resolvers: [ElementPlusResolver()] }),
     Components({ resolvers: [ElementPlusResolver()] }),
+    WindiCSS({
+      scan: {
+        dirs: ['.'],
+        fileExtensions: ['ts', 'js', 'tsx'],
+      },
+    }),
   ],
   resolve: {
     alias: {

@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "attributify",
     "commitlint",
     "esbuild",
     "heti",
@@ -10,6 +11,7 @@
     "vite",
     "vitejs",
     "vitest",
+    "windi",
     "windicss"
   ]
 }

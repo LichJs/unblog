@@ -100,11 +100,13 @@ importers:
       '@vitejs/plugin-vue': ^2.2.0
       '@vitejs/plugin-vue-jsx': ^1.3.4
       '@vue/test-utils': ^2.0.0-rc.17
+      '@vueuse/core': ^7.6.2
       axios: ^0.25.0
       cosmiconfig: ^7.0.1
       cross-env: ^7.0.3
       element-plus: ^2.0.2
       esbuild: ^0.14.21
+      heti: ^0.9.2
       pinia: ^2.0.11
       rollup: ^2.67.2
       rollup-plugin-esbuild: ^4.8.2
@@ -118,7 +120,9 @@ importers:
       vue-router: ^4.0.12
       windicss: ^3.4.3
     dependencies:
+      '@vueuse/core': 7.6.2_vue@3.2.30
       element-plus: 2.0.2_8ddf48dde9d511a4d145aeec74353d80
+      heti: 0.9.2
       pinia: 2.0.11_typescript@4.5.5+vue@3.2.30
       vue: 3.2.30
       vue-router: 4.0.12_vue@3.2.30
@@ -141,7 +145,7 @@ importers:
       rollup: 2.67.2
       rollup-plugin-esbuild: 4.8.2_esbuild@0.14.21+rollup@2.67.2
       rollup-plugin-polyfill-node: 0.8.0_rollup@2.67.2
-      unplugin-auto-import: 0.5.11_737339f39a52c341515b0d4dcab71b66
+      unplugin-auto-import: 0.5.11_9c50fd5a65ef705247f6a7efe85e4324
       unplugin-vue-components: 0.17.18_a38d80f49840394e68cec3fd6002634a
       vite: 2.8.0
       vite-plugin-windicss: 1.7.0_vite@2.8.0
@@ -3607,6 +3611,16 @@ packages:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
     dev: true
 
+  /heti-findandreplacedomtext/0.5.0:
+    resolution: {integrity: sha512-GFZjqU8LAdu1uR72GqrReI+lzNLMlcWtvdz1TKNJiofyo1mfTecFYSZEoEbcLcRMl+KwEldnNQoS4BwO8wtg0A==}
+    dev: false
+
+  /heti/0.9.2:
+    resolution: {integrity: sha512-dgJqK/O3qRf4o9ZTL3bE2+7/cLYVNUoDahXYHQkV4opG8q3GwO7f5pkO9f2Yq6/rT0heiEibOps3DMqfad+sVw==}
+    dependencies:
+      heti-findandreplacedomtext: 0.5.0
+    dev: false
+
   /hosted-git-info/2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
     dev: true
@@ -5096,7 +5110,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-auto-import/0.5.11_737339f39a52c341515b0d4dcab71b66:
+  /unplugin-auto-import/0.5.11_9c50fd5a65ef705247f6a7efe85e4324:
     resolution: {integrity: sha512-MJ3POLe/IysRHF4yd32FkKDoxqSRoiuIHm89ys67B8FLuz2Pvh9poeqTVe6IhJsNxwv0+GSdFfj5Dpq24lhm4g==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -5107,6 +5121,7 @@ packages:
     dependencies:
       '@antfu/utils': 0.4.0
       '@rollup/pluginutils': 4.1.2
+      '@vueuse/core': 7.6.2_vue@3.2.30
       local-pkg: 0.4.1
       magic-string: 0.25.7
       resolve: 1.22.0
