@@ -8,10 +8,18 @@ const routes: RouteRecordRaw[] = [
     name: 'Home',
     component: () => import(/* webpackChunkName: "Home" */ '@/views/home'),
   },
+
   {
     path: '/labels',
     name: 'Labels',
     component: () => import(/* webpackChunkName: "Labels" */ '@/views/labels'),
+  },
+
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: () =>
+      import(/* webpackChunkName: "Settings" */ '@/views/settings'),
   },
 ];
 

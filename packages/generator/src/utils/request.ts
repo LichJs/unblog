@@ -1,9 +1,11 @@
 import axios from 'axios';
 import type { AxiosRequestConfig } from 'axios';
+import { useStore } from '@/stores/github';
+
+const store = useStore();
 
 const isDev = import.meta.env.DEV;
-const token = import.meta.env.VITE_TOKEN;
-// Authorization: `token ${import.meta.env.VITE_TOKEN}`,
+const token = store.token;
 
 const requestConfig: AxiosRequestConfig = {
   baseURL: '/api',
@@ -23,4 +25,19 @@ isDev &&
     port: 7890,
   });
 
-export const request = axios.create(requestConfig);
+const instance = axios.create(requestConfig);
+
+// 请求请求拦截器
+
+// 相应拦截器
+instance.interceptors.request.use(
+  function (response) {
+    return response;
+  },
+  function (error) {
+    console.log(error);
+    return Promise.reject(error);
+  },
+);
+
+export const request = instance;

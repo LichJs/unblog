@@ -9,12 +9,14 @@ body {
   --bg-color: var(--el-color-white);
 }
 
-/* .container {
-  background-color: var(--el-bg-color);
+.header {
+  @apply py-5 w-full relative box-border h-3 text-sm bg-gray-800;
 }
 
-.content {
-  background-color: var(--bg-color);
-  min-height: 100vh;
-  padding: 15px 30px;
-} */
+.header .collapse-btn {
+  @apply float-left px-3 cursor-pointer text-sm;
+}
+
+.header .logo {
+  @apply float-left w-80 text-lg;
+}

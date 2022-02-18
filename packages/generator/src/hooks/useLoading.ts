@@ -28,14 +28,24 @@ export async function useLoading<T>({
   try {
     // 发起请求
     result.value = await queryData;
-  } catch (e) {
+  } catch (e: any) {
+    if (e.response.status === 401) {
+      ElNotification({
+        title: errorTitle,
+        type: 'error',
+        message: 'Github Token 有误.',
+        duration: 0,
+      });
+    } else {
+      ElNotification({
+        title: errorTitle,
+        type: 'error',
+        message: errorText,
+        duration: 0,
+      });
+    }
+
     // 如果请求失败，则提示错误信息
-    ElNotification({
-      title: errorTitle,
-      type: 'error',
-      message: errorText,
-      duration: 0,
-    });
   } finally {
     // 关闭 loading
     loading.close();

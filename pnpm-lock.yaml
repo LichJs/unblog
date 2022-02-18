@@ -92,6 +92,7 @@ importers:
       '@babel/core': ^7.17.2
       '@babel/plugin-transform-runtime': ^7.17.0
       '@babel/preset-env': ^7.16.11
+      '@element-plus/icons-vue': ^0.2.7
       '@rollup/plugin-babel': ^5.3.0
       '@rollup/plugin-commonjs': ^21.0.1
       '@rollup/plugin-json': ^4.1.0
@@ -130,6 +131,7 @@ importers:
       '@babel/core': 7.17.2
       '@babel/plugin-transform-runtime': 7.17.0_@babel+core@7.17.2
       '@babel/preset-env': 7.16.11_@babel+core@7.17.2
+      '@element-plus/icons-vue': 0.2.7_vue@3.2.30
       '@rollup/plugin-babel': 5.3.0_@babel+core@7.17.2+rollup@2.67.2
       '@rollup/plugin-commonjs': 21.0.1_rollup@2.67.2
       '@rollup/plugin-json': 4.1.0_rollup@2.67.2
@@ -1541,7 +1543,6 @@ packages:
       vue: ^3.2.0
     dependencies:
       vue: 3.2.30
-    dev: false
 
   /@eslint/eslintrc/1.0.5:
     resolution: {integrity: sha512-BLxsnmK3KyPunz5wmCCpqy0YelEoxxGmH73Is+Z74oOTMtExcjkr3dDR6quwrjh1YspA8DH9gnX1o069KiS9AQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npm.taobao.org/@eslint/eslintrc/-/eslintrc-1.0.5.tgz}

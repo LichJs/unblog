@@ -20,15 +20,8 @@ export default defineComponent({
       }
     };
 
-    onMounted(() => {
-      loadData();
-    });
-
     return {
-      repos: import.meta.env.VITE_GITHUB_REPO,
       labels,
-      loadData,
-      queryData,
       queryDom,
     };
   },

@@ -1,6 +1,7 @@
 import { defineComponent } from 'vue';
 import { storeToRefs } from 'pinia';
 import { useStore } from '@/stores/counter';
+import Layout from '@/components/layout';
 
 export default defineComponent({
   setup() {
@@ -13,7 +14,7 @@ export default defineComponent({
   },
   render() {
     return (
-      <>
+      <Layout>
         <h1>Hello {this.name} ~</h1>
         <el-button
           type="primary"
@@ -25,7 +26,7 @@ export default defineComponent({
         <el-button class="minus-btn" onClick={() => (this.counter -= 1)}>
           -
         </el-button>
-      </>
+      </Layout>
     );
   },
 });
