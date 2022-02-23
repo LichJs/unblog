@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue';
-import Header from './header';
+import GHeader from './header';
 import SideBar from './sidebar';
 
 export default defineComponent({
@@ -7,13 +7,13 @@ export default defineComponent({
   render() {
     return (
       <el-container>
-        <el-header padding="0 30px" height="auto">
-          <Header />
-        </el-header>
+        <el-aside width="200px">
+          <SideBar />
+        </el-aside>
         <el-container>
-          <el-aside width="200px">
-            <SideBar />
-          </el-aside>
+          <el-header height="auto" style="--el-header-padding: 0;">
+            <GHeader />
+          </el-header>
           <el-main>{this.$slots.default?.()}</el-main>
         </el-container>
       </el-container>

@@ -5,12 +5,13 @@
 
 body {
 }
+
 :root {
   --bg-color: var(--el-color-white);
 }
 
 .header {
-  @apply py-5 w-full relative box-border h-3 text-sm bg-gray-800;
+  @apply py-5 w-full relative box-border overflow-hidden text-white text-sm bg-gray-800 select-none;
 }
 
 .header .collapse-btn {

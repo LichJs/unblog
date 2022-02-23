@@ -5,6 +5,7 @@ import 'element-plus/dist/index.css';
 import 'heti/umd/heti.min.css';
 import '@/utils/customized.css';
 import 'virtual:windi.css';
+// import 'uno.css';
 
 import App from './App';
 import router, { useRouter } from './router';
